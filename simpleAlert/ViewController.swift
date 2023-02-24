@@ -13,7 +13,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    func ShowSimpleAlert() {
+        let alert = UIAlertController(title: "Alert", message: "Do you want to save  Details", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "No", style: .default, handler: { action in
+            print("No has been tapped")
+        }))
+    }
 
 
+    @IBAction func btnTapped(_ sender: Any) {
+        
+        ShowSimpleAlert() 
+    }
 }
 
