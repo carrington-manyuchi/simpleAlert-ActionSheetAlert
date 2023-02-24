@@ -27,6 +27,22 @@ class ViewController: UIViewController {
         }))
         present(alert, animated: true, completion: nil)
     }
+    
+    
+    
+    
+    func ActionSheetStyle() {
+        
+        let alert = UIAlertController(title: "Action Seet", message: "Do you want to save your details", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "No", style: .default, handler: { action in
+            print("No button tapped")
+        }))
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+            print("Yes button tapped")
+        }))
+        present(alert, animated: true, completion: nil)
+    }
 
 
     @IBAction func btnTapped(_ sender: Any) {
