@@ -49,5 +49,10 @@ class ViewController: UIViewController {
         
         ShowSimpleAlert()
     }
+    
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        ActionSheetStyle()
+    }
 }
 
